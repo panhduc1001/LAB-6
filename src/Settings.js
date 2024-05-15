@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Photo from "./avatar.png";
+import NavBar from "./Component/NavBar";
 import {
 	BrowserRouter as Router,
 	Routes,
@@ -9,11 +10,12 @@ import {
 import { ToastContainer, toast } from "react-toastify";
 
 const Settings = () => {
-	return () => {
-		<div>
-			<h1>HELLO GUYS</h1>
-		</div>;
-	};
+	return (
+		<>
+			<NavBar />
+			<h1 color="black">HELLO I'M SETTINGS</h1>
+		</>
+	);
 };
 
 export default Settings;

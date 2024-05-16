@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Photo from "../avatar.png";
 import { Link, Navigate } from "react-router-dom";
-import Settings from "../Settings";
 
 const NavBar = () => {
 	return (
@@ -16,24 +15,24 @@ const NavBar = () => {
 				</div>
 
 				<div className="flex items-center justify-center">
-					<div class="flex space-x-5 items-center justify-center p-4">
+					<div className="flex space-x-5 items-center justify-center p-4">
 						<Link
 							to="/account"
-							class="text-gray-300 hover:bg-stone-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+							className="text-gray-300 hover:bg-stone-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
 							aria-current="page"
 						>
 							Account
 						</Link>
 						<Link
 							to="/reposts"
-							class="text-gray-300 hover:bg-stone-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+							className="text-gray-300 hover:bg-stone-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
 						>
 							Reposts
 						</Link>
 
 						<Link
 							to="/settings"
-							class="text-gray-300 hover:bg-stone-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+							className="text-gray-300 hover:bg-stone-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
 						>
 							Settings
 							{/* <Navigate replace to="/settings" /> */}
@@ -41,7 +40,7 @@ const NavBar = () => {
 
 						<Link
 							to="/help_and_support"
-							class="text-gray-300 hover:bg-stone-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+							className="text-gray-300 hover:bg-stone-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
 						>
 							Help & Support
 						</Link>

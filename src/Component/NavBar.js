@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Photo from "../avatar.png";
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import avatar from "../Settings";
 
 const NavBar = () => {
 	return (

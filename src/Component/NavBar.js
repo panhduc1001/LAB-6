@@ -6,12 +6,12 @@ import avatar from "../Settings";
 const NavBar = () => {
 	return (
 		<>
-			<nav className="bg-stone-600 flex justify-between">
+			<nav className="bg-stone-500 flex justify-between">
 				<div className="flex items-center">
 					<button type="button" className="flex justify-center rounded-md">
-						<h1 className="text-gray-300 hover:bg-stone-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+						<p className="text-gray-300 hover:bg-stone-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
 							Menu
-						</h1>
+						</p>
 					</button>
 				</div>
 

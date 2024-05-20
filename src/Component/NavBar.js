@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import Photo from "../avatar.png";
+import { AvatarContext } from "../Component/AvatarContext";
 import { Link } from "react-router-dom";
-import avatar from "../Settings";
 
 const NavBar = () => {
+	const { avatar } = useContext(AvatarContext);
+
 	return (
 		<>
 			<nav className="bg-stone-500 flex justify-between">
@@ -20,7 +22,6 @@ const NavBar = () => {
 						<Link
 							to="/account"
 							className="text-gray-300 hover:bg-stone-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-							aria-current="page"
 						>
 							Account
 						</Link>
@@ -36,7 +37,6 @@ const NavBar = () => {
 							className="text-gray-300 hover:bg-stone-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
 						>
 							Settings
-							{/* <Navigate replace to="/settings" /> */}
 						</Link>
 
 						<Link
@@ -59,11 +59,10 @@ const NavBar = () => {
 						aria-expanded="false"
 						aria-haspopup="true"
 					>
-						<img
-							className="h-8 w-8 rounded-full"
-							src={Photo}
-							alt="Khabib Akhamedov"
-						/>
+						{avatar && (
+							<img className="h-8 w-8 rounded-full" src={avatar} alt="Avatar" />
+						)}
+						{/* <img className="h-8 w-8 rounded-full" src={Photo} alt="Avatar" /> */}
 					</button>
 				</div>
 			</nav>

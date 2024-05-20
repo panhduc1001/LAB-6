@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import Photo from "./avatar.png";
-import NavBar from "./Component/NavBar";
+import React, { useState, useContext } from "react";
+import Photo from "../avatar.png";
+import NavBar from "../Component/NavBar";
+import { AvatarContext } from "../Component/AvatarContext";
 import { ToastContainer, toast } from "react-toastify";
 
 const Settings = () => {
@@ -74,6 +75,7 @@ const Settings = () => {
 									style={{ display: "none" }}
 									ref={(input) => (fileInputRef = input)}
 								/>
+
 								<img
 									className="h-32 w-32 rounded-full justify-center border-4 border-stone-500"
 									src={avatar}
